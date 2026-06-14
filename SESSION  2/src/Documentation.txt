@@ -1,0 +1,26 @@
+Session 2 Documentation
+
+("+var+") acts as {var} in Python 
+
+Scanner input = new Scanner(System.in)
+Integer var = value
+Integer var = new Integer("Value")
+
+String Library
+string.length()
+string.charAt()
+string.replace()
+string.replaceFirst()
+string.equals()
+string.compareTo()
+string.split()
+
+Math.random()
+
+Handles error
+try {
+	// Main line	
+	throw new Exception(); -> moves the program to catch
+} catch (Exception e) {
+	print(e)
+}

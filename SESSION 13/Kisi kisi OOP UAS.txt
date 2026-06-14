@@ -1,0 +1,6 @@
+theory / essay:
+Generic
+
+Cases (code):
+1. SOLID (identify problem & solution)
+2. Classes - abstract class + method - menu

@@ -1,0 +1,9 @@
+Johannes Aaron Framon / 2802428223
+
+In the original code, all printing logic is placed inside a single InvoicePrinter class. This design is difficult to extend because every new output method (such as Email or WhatsApp) would require modifying the same class repeatedly. This thing also violates fundamental OOP principles such as modularity, separation of responsibility, by making multiple class.
+
+A better design is to introduce an abstract class called SendMessage that contain a shared behavior, such as preparing the message for invoice, email and whatsapp. This class defines an abstract method send(), which will be implemented differently by each subclasses.
+
+These subclasses such as PrintInvoice, Email, and WhatsApp each override the send() method from SendMessage parent class each with their own unique behavior. This structure applies polymorphism concept, because different subclass objects respond differently to the same method call. This is also known as Overriding.
+
+This design is considered good because it is modular, easy to maintain, and easy to extend. Adding a new delivery method in the future will not require modifying existing code, but simply by creating a new subclass which is easier to maintain and doesn't make a program in one class larger than the other. So, separation of responsibility leads to cleaner and more flexible software rather than combining everything in one class.
